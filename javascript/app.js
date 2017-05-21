@@ -23,7 +23,7 @@ $(document).ready(function() {
               
                 for (var i = 0; i < results.length; i++) {
                     var topicDiv = $('<div class="gif">');
-                    var p = $('<p>').text("Rating: " + results[i].rating);
+                    var rating = $('<span>').text("Rating: " + results[i].rating);
                     var topicImage = $('<img data-state="still">');
 
                     var still = results[i].images.fixed_height.url;
@@ -33,8 +33,9 @@ $(document).ready(function() {
                     topicImage.attr('data-still', still);
                     topicImage.attr('src', still);
 
-                    topicDiv.append(p);
+                    
                     topicDiv.append(topicImage);
+                    topicDiv.append(rating);
                     $('#gifsAppearHere').prepend(topicDiv);
                 }
                     $(".gif img").on("click", function() {

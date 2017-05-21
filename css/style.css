@@ -18,6 +18,7 @@ html , body {
 
 .btn {
 	padding: .5em 1em;
+	font-family: 'Acme', sans-serif;
 	margin: .5em;
 	font-weight: bold;
 	font-size: 1em;
@@ -37,12 +38,14 @@ html , body {
 
 .actions {
 	text-align: center;
+	margin-bottom: 3em
 }
 
 #newTermText {
 	border-radius: 2em;
     padding: .5em 1em;
     font-size: 1em;
+    font-family: 'Acme', sans-serif;
 }
 
 #gifsAppearHere {
@@ -53,4 +56,22 @@ html , body {
 
 .gif {
 	padding: .5em;
+}
+
+.gif:hover span {
+	visibility: initial;
+}
+
+.gif img {
+	display: block;
+}
+
+.gif span {
+	visibility: hidden;
+	margin: 0;
+    position: relative;
+    bottom: 3em;
+    left: 1em;
+    background: rgba(0,0,0,.5);
+    padding: 1em;
 }
