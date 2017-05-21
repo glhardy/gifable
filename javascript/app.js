@@ -20,7 +20,7 @@ $(document).ready(function() {
                 $('#gifsAppearHere').html('');
               
                 for (var i = 0; i < results.length; i++) {
-                    var topicDiv = $('<div class="col-sm-12 col-md-3">');
+                    var topicDiv = $('<div class="gif">');
                     var p = $('<p>').text("Rating: " + results[i].rating);
                     var topicImage = $('<img>');
                     topicImage.attr('src', results[i].images.fixed_height.url);

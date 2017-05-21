@@ -1,0 +1,31 @@
+html , body {
+	font-family: 'Acme', sans-serif;
+	color: white;
+	font-size: 16px;
+	background-image: url('../background.png');
+}
+
+.header {
+	text-align: center;
+}
+
+.header h1 {
+	font-family: 'Barrio', cursive;
+	color: white;
+	font-size: 6em;
+	margin-bottom: 0;
+}
+
+.actions {
+	text-align: center;
+}
+
+#gifsAppearHere {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.gif {
+	padding: .5em;
+}
