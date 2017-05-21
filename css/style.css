@@ -33,6 +33,7 @@ html , body {
 	/*font-size: */
 	background: black;
 	color: white;
+	cursor: pointer;
 	/*border: 3px solid black;*/
 }
 
@@ -56,6 +57,10 @@ html , body {
 
 .gif {
 	padding: .5em;
+}
+
+.gif:hover {
+	cursor: pointer;
 }
 
 .gif:hover span {
